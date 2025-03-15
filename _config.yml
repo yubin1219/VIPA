@@ -1,3 +1,4 @@
 url: "https://yubin1219.github.io/VIPA/" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+google_analytics: G-VP0MSHHZXV
