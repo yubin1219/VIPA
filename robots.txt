@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yubin1219.github.io/VIPA/sitemap.xml
