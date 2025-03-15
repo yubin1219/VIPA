@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation">
+  <meta property="og:title" content="EDAFormer (ECCV 2024)"/>
+  <meta property="og:description" content="Project page for EDAFormer (ECCV 2024)"/>
+  <meta name="og:image" content="static/images/eccv_isr.png">
+  <meta property="og:url" content="https://yubin1219.github.io/edaformer/"/>
+  
+
+
+  <meta name="twitter:title" content="EDAFormer (ECCV 2024)">
+  <meta name="twitter:description" content="Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/eccv_isr.png">
+  <meta name="twitter:card" content="EDAFormer (ECCV 2024)">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Embedding-Free Transformer, Inference Spatial Reduction, Efficient Segmentation">
+  
+  
+  <title>EDAFormer</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=UcdyUtGQsmqX&format=png&color=000000">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=c-4JTUkAAAAJ&hl=ko&oi=sra" target="_blank">Hyunwoo Yu</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=qRjx9NkAAAAJ&hl=ko&oi=sra" target="_blank">Yubin Cho</a><sup>1,2*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=XKx-Di4AAAAJ&hl=ko&oi=sra" target="_blank">Beoungwoo Kang</a><sup>1*</sup>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Seunghun Moon</a><sup>1*</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com/citations?user=O9QSF7UAAAAJ&hl=ko&oi=sra" target="_blank">Kyeongbo Kong</a><sup>3*</sup>,</span>
+                        <span class="author-block">
+                        <a href="https://scholar.google.com/citations?user=3WYxpuYAAAAJ&hl=ko&oi=sra" target="_blank">Suk-Ju Kang</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup> Sogang University, <sup>2</sup> LG Electronics, <sup>3</sup> Pusan National University</span><br><sup>*</sup>Equal Contribution</span>
+                  </div>
+            
+                  <div class="is-size-5 publication-authors" >
+                    <p class="author-block" > <strong>Accepted by ECCV 2024</strong>
+                    </p>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2407.17261.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/hyunwoo137/EDAFormer" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.17261" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+            <div class="image"><br>
+              <center>
+            <img src="static/images/qual_.png" alt="qual"/>
+            </center> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present an Encoder-Decoder Attention Transformer, EDAFormer, which consists of the Embedding-Free Transformer (EFT) encoder and the all-attention decoder leveraging our Embedding-Free Attention (EFA) structure. The proposed EFA is a novel global context modeling mechanism that focuses on functioning the global non-linearity, not the specific roles of the query, key and value. For the decoder, we explore the optimized structure for considering the globality, which can improve the semantic segmentation performance. In addition, we propose a novel Inference Spatial Reduction (ISR) method for the computational efficiency. Different from the previous spatial reduction attention methods, our ISR method further reduces the key-value resolution at the inference phase, which can mitigate the computation-performance trade-off gap for the efficient semantic segmentation. Our EDAFormer shows the state-of-the-art performance with the efficient computation compared to the existing transformer-based semantic segmentation models on three public benchmarks, including ADE20K, Cityscapes and COCO-Stuff. Furthermore, our ISR method reduces the computational cost by up to 61% with minimal mIoU performance degradation on Cityscapes dataset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper highlight -->
+<section class="hero-body">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🔥 Highlights</h2>
+        <div class="content has-text-left">
+          <p>
+            <strong><font color="#D2AB5B">1. We propose a novel Embedding-Free Attention (EFA) structure</font></strong>, which removes the embeddings of the query, key and value in the attention mechanism. EFA leads to the competitive performance on image classification and semantic segmentation tasks. We empirically find that EFA is effective for our ISR in terms of considering the trade-off between computation and performance degradation. 
+            <div class="image" >
+              <center>
+              <img src="static/images/efa.png" style="width:388px;height:246px;" />
+              </center>
+          </div>
+          <div class="content has-text-centered">
+            <p><strong>Figure 1. Comparison of the previous attention structure and our EFA structure</strong></p>
+          </div>   
+            <br><br>
+            <strong><font color="#D2AB5B">2. We present EDAFormer</font></strong>, a powerful semantic segmentation model with the proposed Embedding-Free Transformer encoder and all-attention decoder. The all-attention decoder exploits the more number of the proposed EFA module at the higher level to capture the global context more effectively. 
+          <div class="image">
+            <center>
+            <img src="static/images/architecture2.png" alt="Overall architecture"/>
+            </center>
+          </div>
+          <div class="content has-text-centered">
+            <p><strong>Figure 2. (a) Overall architeucture of EDAFormer (b) Details of Embedding-Free Transformer block</strong></p>
+          </div>
+          <br><br>
+          <strong><font color="#D2AB5B">3. We present Inference Spatial Reduction (ISR) method,</font></strong> which reduces the key-value spatial resolution more at the inference phase than the training phase. ISR enables the models to reduce the computational cost with less degradation in segmentation performance at the inference phase. Without additional training, ISR allows to selectively adjust computational costs of the trained model. 
+          <div class="image">
+            <center><br>
+              <img src="static/images/eccv_isr.png" alt="ISR" />
+            </center>
+          </div>
+          <div class="content has-text-left">
+              <p><strong>Figure 3. Overview of ISR method at the 1st stage of the encoder.</strong> Our ISR adjusts the reduction ratio at the inference, reducing the key and value tokens selectively. This framework can be performed at every stage that contains the self-attention structure. It leads to flexibly reduce the computational cost without disrupting the spatial structure. 
+              </p>
+          </div> 
+          <br><br><strong><font color="#D2AB5B">4. EDAFormer surpasses the previous transformer-based segmentation models in terms of both efficiency and accuracy</font></strong> on ADE20K, Cityscapes and COCO-Stuff benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper highlight -->
+
+
+
+
+<!-- Image carousel -->
+<!--<section class="hero">-->
+  <!--<div class="hero-body">-->
+    <!--<div class="container">-->
+     <!-- <div class="columns is-centered has-text-centered">-->
+        <!--<div class="column is-four-fifths">-->
+         <!-- <h2 class="title is-3">Overviews</h2>-->
+         <!-- <div id="results-carousel" class="carousel results-carousel">-->
+         <!--  <div class="item">-->
+            <!-- Your image here -->
+           <!-- <img src="static/images/architecture2.png" alt="Overall architecture"/>-->
+           <!-- <h5 class="content has-text-left">-->
+           <!--   <strong>(a) Overall architeucture of EDAFormer (b) Details of Embedding-Free Transformer (EFT) block</strong>-->
+            <!--</h5>-->
+         <!-- </div>-->
+         <!-- <div class="item">-->
+            <!-- Your image here -->
+            <!--<img src="static/images/efa6.pdf" alt="embedding-free attention"/>-->
+           <!-- <p class="subtitle has-text-centered">-->
+             <!-- <strong>Comparison of the previous attention structure and our EFA structure</strong>-->
+           <!-- </p>-->
+          <!--</div>-->
+          <!--<div class="item">-->
+            <!-- Your image here -->
+            <!--<img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+            <!--<h3 class="subtitle has-text-centered">-->
+            <!-- <strong>Overview of ISR method at the 1st stage of the encoder</strong> -->
+            <!-- <br><small>Our ISR adjusts the reduction ratio at the inference, reducing the key and value tokens selectively. This framework can be performed at every stage that contains the self-attention structure. It leads to flexibly reduce the computational cost without disrupting the spatial structure. </small>-->
+            <!--</h3>-->
+          <!--</div>-->
+       <!-- </div>-->
+    <!--  </div>-->
+ <!-- </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+<!-- Experimental -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Experimental Results</h2>
+          <div class="image">
+          <center>
+            <img src="static/images/table.png" alt="table1"/>
+          </center>
+          </div>
+          <div class="content has-text-left">
+            <p><strong>Table 1.</strong> Performance comparison with the transformer-based state-of-the-art semantic segmentation models & Performance-Computation curves of our EDAFormer and existing segmentation models.</p>
+          </div>
+          <div class="image">
+          <center>
+            <img src="static/images/table2.png" alt="table2" style="width:401px;height:352px;" />
+          </center>
+          </div>
+          <div class="content has-text-centered">
+            <p><strong>Table 2.</strong> Performance comparison with the previous classification models on ImageNet.</p>
+          </div>
+          <div class="image">
+          <center>
+            <img src="static/images/table4.png" alt="table4" style="width:908px;height:305px;" />
+          </center>
+          </div>
+          <div class="content has-text-left">
+            <p><strong>Table 3.</strong> Computation and performance of EDAFormer with ISR on three standard benchmarks. † indicates 'w/o ISR' where the same reduction ratio is applied at training and inference. ⋆ indicates the fine-tuning. Bold is optimal inference reduction ratio for our EDAFormer.</p>
+          </div>
+          <div class="image">
+          <center>
+            <img src="static/images/table5.png" alt="table5" style="width:908px;height:190px;" />
+          </center>
+          </div>
+          <div class="content has-text-left">
+            <p><strong>Table 4.</strong> (a) Performance comparison of our model with ISR and our model trained with the increased reduction ratio. (b) Ablation on the effectiveness of EFA for ISR. Our EFA structure is effective for applying our ISR method. </p>
+          </div>
+          <div class="image">
+          <center>
+            <img src="static/images/table7.png" alt="table7" style="width:412px;height:334px;" />
+          </center>
+          </div>
+          <div class="content has-text-centered">
+            <p><strong>Table 5.</strong> Applying our ISR without finetuning to various transformer-based models. These results show the generalizability of our ISR.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experimental -->
+
+
+<!-- Qualitative -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Visualizations</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+           <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/visualization_feature.png" alt="feature"/>
+            <h3 class="subtitle has-text-left">
+              <small><strong>Figure 5. Visualization of the attention score map, output features, and prediction map.</strong></small> <small>Compared to without applying our ISR, the attention scores and output features of the self-attention with ISR were well maintained. The information obtained from the self-attention operation is maintained even though the spatial reduction is applied to the key and value <strong>at the inference phase.</strong></small>
+            </h3>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/fig8.png" alt="quali"/>
+            <h3 class="subtitle has-text-left">
+              <small><strong>Figure 6. Qualitative comparison on ADE20K, Cityscapes, and COCO-Stuff datasets.</strong></small> <small>Compared to SegFormer and FeedFormer, the predictions of our EDAFormer are more precise for various categories.</small>
+            </h3>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End Qualitative -->
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yu2024embedding,
+  title={Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation},
+  author={Yu, Hyunwoo and Cho, Yubin and Kang, Beoungwoo and Moon, Seunghun and Kong, Kyeongbo and Kang, Suk-Ju},
+  journal={arXiv preprint arXiv:2407.17261},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
